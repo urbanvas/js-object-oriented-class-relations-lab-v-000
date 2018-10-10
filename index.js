@@ -15,7 +15,7 @@ class Driver {
   }
   passengers () {
     return store.passengers.filter(function (passenger) {
-      debugger
+      
       return this.id === trips.driverId
     }.bind(this))
   }
