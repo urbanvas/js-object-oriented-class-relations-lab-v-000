@@ -8,6 +8,11 @@ class Driver {
     this.id = ++driverId
     store.drivers.push(this)
   }
+  trips () {
+    return store.trips.filter(function () {
+      return this.id === trips.driverId
+    }.bind(this))
+  }
 }
 class Passenger {
   constructor (name) {
