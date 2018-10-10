@@ -9,8 +9,8 @@ class Driver {
     store.drivers.push(this)
   }
   trips () {
-    return store.trips.filter(function () {
-      return this.id === trips.driverId
+    return store.trips.filter(function (trip) {
+      return this.id === trip.driverId
     }.bind(this))
   }
 }
@@ -38,5 +38,5 @@ class Trip {
       return driver.id === this.driverId
     }.bind(this)
   )}
-  
+
 }
