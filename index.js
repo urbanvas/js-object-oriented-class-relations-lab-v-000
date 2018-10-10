@@ -33,4 +33,5 @@ class Trip {
       return driver.id === this.driverId
     }.bind(this)
   )}
+  
 }
