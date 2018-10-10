@@ -26,7 +26,7 @@ class Trip {
   passenger () {
     return store.passengers.filter(function (passenger) {
         debugger
-        return passenger.id === this.id
+        return passenger.id === this.passengerId
       }.bind(this)
     )
   }
