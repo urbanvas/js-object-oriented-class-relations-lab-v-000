@@ -13,6 +13,11 @@ class Driver {
       return this.id === trip.driverId
     }.bind(this))
   }
+  passengers () {
+    return store.passengers.filter(function (passenger) {
+      return this.id === passenger.driverId
+    }.bind(this))
+  }
 }
 class Passenger {
   constructor (name) {
